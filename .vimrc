@@ -140,7 +140,6 @@ set guioptions-=T
 set t_Co=256
 set background=dark
 colorscheme peaksea
-set nonu
 set encoding=utf8
 
 try

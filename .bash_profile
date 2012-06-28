@@ -1,6 +1,6 @@
 # PATH
 PATH=$HOME/local/install:$PATH # manually installed things go here
-PATH=/usr/local/share/npm/bin:$PATH # for npm
+PATH=/usr/local/share/npm/bin:$PATH # npm
 
 export NODE_PATH="/usr/local/lib/node"
 
