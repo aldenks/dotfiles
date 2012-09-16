@@ -13,6 +13,7 @@ PS1="\w$ " # set prompt to be current working dir, relative to ~
 # ALIASES
 alias m='mate'
 alias v='mvim'
+alias gits='git status'
 alias cdd='cd ~/Dropbox/Code/'
 alias cdh='cd ~/Dropbox/Code/django/hullabaloo/'
 alias cdxim='cdd; cd rails/xim/'
@@ -23,5 +24,3 @@ alias cdl='cd ~-'
 alias rmt='rm *~'
 alias djrs='python manage.py runserver'
 function mkcd { mkdir $1; cd $1; }
-
-

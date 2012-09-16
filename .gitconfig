@@ -1,0 +1,16 @@
+[user]
+	name = aldenks
+	email = aldenkeefesampson@gmail.com
+	user = aldenks
+[alias]
+	co = checkout
+	s  = status
+	d  = diff
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+[github]
+	user = aldenks
+	token = c0f7436de258968e8e9a7d1cc463db66
+[color]
+	ui = true
