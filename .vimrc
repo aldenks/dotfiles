@@ -76,10 +76,10 @@ set autoindent
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 " Change spaces to a tab character
+set smartindent
+set tabstop=2
+set shiftwidth=2
 set expandtab
-set smarttab
-set shiftwidth=3
-set softtabstop=3
 
 " Spell checking (default=false)
 if version >= 700
@@ -233,6 +233,3 @@ map n nzz
 " Swap ; and : (one less keypress)
 nnoremap ; :
 nnoremap : ;
-
-" Font of choice, final number is font size
-set guifont=DejaVu\ Sans\ Mono:h11
