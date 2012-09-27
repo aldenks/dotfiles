@@ -211,6 +211,8 @@ endfunction
 "}}}
 
 "{{{ Mappings
+" Set leader to comma
+let mapleader = ","
 
 " Open Url with the browser \w
 map <Leader>w :call Browser ()<CR>
