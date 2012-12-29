@@ -24,3 +24,17 @@ alias cdl='cd ~-'
 alias rmt='rm *~'
 alias djrs='python manage.py runserver'
 function mkcd { mkdir $1; cd $1; }
+
+# takes in new repo's name as argument
+# ex: $ git-create tufts-hackathon
+# via marshall moutenot
+function git-create () {
+  user=$(git config --get github.user)
+  git init
+  touch README.md
+  curl -u "${user}" https://api.github.com/user/repos -d '{"name":"'${1}'"}' > /dev/null
+  git remote add origin git@github.com:${user}/${1}.git
+  git add .
+  git commit -am 'first commit'
+  git push -u origin master
+}
