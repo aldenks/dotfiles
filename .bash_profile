@@ -13,8 +13,8 @@ PS1="\w$ " # set prompt to be current working dir, relative to ~
 # ALIASES
 alias m='mate'
 alias v='mvim'
-alias gits='git status'
 alias cdd='cd ~/Dropbox/Code/'
+alias cdu='cd $(git rev-parse --show-toplevel)' # cd to git repo root
 alias ssht='ssh asamps01@linux.cs.tufts.edu'
 alias sshtx='ssh -X asamps01@linux.cs.tufts.edu'
 alias sftpt='sftp asamps01@linux.cs.tufts.edu'
