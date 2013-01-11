@@ -5,6 +5,7 @@
 [alias]
   s  = status
   d  = diff
+  c  = commit
   l  = log
 [core]
   editor = vim
