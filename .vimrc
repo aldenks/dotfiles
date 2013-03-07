@@ -234,3 +234,7 @@ map n nzz
 " Swap ; and : (one less keypress)
 nnoremap ; :
 nnoremap : ;
+
+" Processing (visual java library) syntax highlighting and sketch runing
+au BufRead,BufNewFile *.pde     setf processing
+:command P :! processing-java --sketch=$PWD/ --output=temp --run --force
