@@ -235,6 +235,9 @@ map n nzz
 nnoremap ; :
 nnoremap : ;
 
+set exrc    " enable per-directory .vimrc files
+set secure  " disable unsafe commands in local .vimrc files
+
 " Processing (visual java library) syntax highlighting and sketch runing
 au BufRead,BufNewFile *.pde     setf processing
 :command P :! processing-java --sketch=$PWD/ --output=temp --run --force
