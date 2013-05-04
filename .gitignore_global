@@ -53,3 +53,8 @@ Thumbs.db
 ######################
 *.swp
 *.swo
+
+# Xcode
+######################
+xcuserdata/
+project.xcworkspace/
