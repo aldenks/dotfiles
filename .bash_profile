@@ -1,7 +1,8 @@
 # PATH
 PATH=$HOME/local/install:$PATH # manually installed things go here
 PATH=/usr/local/share/npm/bin:$PATH # npm
-PATH=/usr/local/bin:$PATH # make sure homebrew's stuff is before OSX's
+PATH=/usr/local/bin:$PATH  # make sure homebrew's stuff is before OSX's
+PATH=/usr/local/sbin:$PATH # homebrew's sbin
 
 export NODE_PATH="/usr/local/lib/node"
 
