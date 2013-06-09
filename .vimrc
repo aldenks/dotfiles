@@ -84,6 +84,18 @@ endtry
 set ffs=unix,dos,mac "Default file types
 
 " ******************
+"   Plugins
+" ******************
+
+" Pathogen  https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
+
+" Syntastic syntax checker
+" When on, :lnext and :lprev always work when there are errors
+" If off, use :Errors to populate location list
+let g:syntastic_always_populate_loc_list = 1
+
+" ******************
 "   Formatting
 " ******************
 
