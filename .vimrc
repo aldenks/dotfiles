@@ -168,20 +168,6 @@ function! Browser()
     exec "!chrome ".line
 endfunction
 
-"}}}
-
-"{{{ Todo List Mode
-
-function! TodoListMode()
-    e ~/.todo.otl
-    Calendar
-    wincmd l
-    set foldlevel=1
-    tabnew ~/.notes.txt
-    tabfirst
-    or 'norm! zMzr'
-endfunction
-
 " ******************
 "   Mappings
 " ******************
@@ -210,13 +196,25 @@ map n nzz
 nnoremap ; :
 nnoremap : ;
 
+" resize current buffer by +/- 5
+nnoremap <C-S-left> :vertical resize -5<cr>
+nnoremap <C-S-down> :resize +5<cr>
+nnoremap <C-S-up> :resize -5<cr>
+nnoremap <C-S-right> :vertical resize +5<cr>
+
+" switch between windows with Cmd-[H,J,K,L]
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+
 " ********************
 "  Language Specific
 " ********************
 
 " Processing (visual java library) syntax highlighting and sketch runing
 au BufRead,BufNewFile *.pde     setf processing
-:command P :! processing-java --sketch=$PWD/ --output=temp --run --force
+:command! P :! processing-java --sketch=$PWD/ --output=temp --run --force
 
 " Complete CSS
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
