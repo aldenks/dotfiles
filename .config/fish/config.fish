@@ -2,6 +2,9 @@
 set PATH ~/.cabal/bin $PATH
 set PATH /usr/local/sbin $PATH
 
+# Editor
+set -x EDITOR vim
+
 # rbenv
 set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
