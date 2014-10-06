@@ -1,0 +1,7 @@
+" Swap ; and : (one less keypress)
+nnoremap ; :
+nnoremap : ;
+
+" No annoying bell
+set visualbell
+set noerrorbells
