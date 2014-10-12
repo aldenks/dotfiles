@@ -23,6 +23,8 @@ brew install git
 brew install rbenv
 brew install mysql
 brew install maven
+brew install httpie
+brew install the_silver_searcher
 
 defaults write com.apple.Safari HomePage -string "about:blank"
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
@@ -33,4 +35,7 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+# annoying sounds begone
 sudo nvram SystemAudioVolume=" "
+defaults write "com.apple.systemsound" "com.apple.sound.uiaudio.enabled" -int 0
+defaults write -g "com.apple.sound.beep.feedback" -int 0
