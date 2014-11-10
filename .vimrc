@@ -110,7 +110,7 @@ set expandtab
 " ******************
 
 " Syntax Higlighting
-syntax enable
+syntax on
 filetype on
 filetype plugin on
 filetype indent on
