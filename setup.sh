@@ -20,11 +20,13 @@ brew cask install java
 brew install fish
 brew install vim
 brew install git
+brew install tree
 brew install rbenv
 brew install mysql
 brew install maven
 brew install httpie
 brew install the_silver_searcher
+brew install leiningen
 
 defaults write com.apple.Safari HomePage -string "about:blank"
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
