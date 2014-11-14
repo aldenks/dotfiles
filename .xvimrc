@@ -1,0 +1,3 @@
+" Swap ; and : (one less keypress)
+nnoremap ; :
+nnoremap : ;
