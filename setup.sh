@@ -27,6 +27,7 @@ brew install maven
 brew install httpie
 brew install the_silver_searcher
 brew install leiningen
+brew install node
 
 defaults write com.apple.Safari HomePage -string "about:blank"
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
