@@ -16,6 +16,7 @@ brew cask install google-chrome
 brew cask install iterm2
 brew cask install dropbox
 brew cask install java
+brew cask install charles
 
 brew install fish
 brew install vim

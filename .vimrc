@@ -215,3 +215,13 @@ au BufRead,BufNewFile *.pde     setf processing
 
 " Complete CSS
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
+"
+" Clojure
+"
+
+" Rainbow Parentheses
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
