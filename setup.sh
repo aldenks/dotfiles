@@ -41,6 +41,7 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write -g ApplePressAndHoldEnabled -bool false
 # annoying sounds begone
 sudo nvram SystemAudioVolume=" "
 defaults write "com.apple.systemsound" "com.apple.sound.uiaudio.enabled" -int 0
