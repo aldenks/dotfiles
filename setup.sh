@@ -17,6 +17,7 @@ brew cask install iterm2
 brew cask install dropbox
 brew cask install java
 brew cask install charles
+brew cask install xquartz
 
 brew install fish
 brew install vim
