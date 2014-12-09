@@ -13,6 +13,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install caskroom/cask/brew-cask
 
 brew cask install google-chrome
+brew cask install firefox
 brew cask install iterm2
 brew cask install dropbox
 brew cask install java
