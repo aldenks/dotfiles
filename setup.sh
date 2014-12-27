@@ -24,6 +24,7 @@ brew install fish
 brew install vim
 brew install git
 brew install tree
+brew install wget
 brew install rbenv
 brew install mysql
 brew install maven
