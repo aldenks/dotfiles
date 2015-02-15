@@ -84,6 +84,12 @@ set ffs=unix,dos,mac "Default file types
 "   Plugins
 " ******************
 
+" YouCompleteMe
+let g:ycm_min_num_of_chars_for_completion = 1
+
+" push inserted matching } down an extra line when adding a new line
+let delimitMate_expand_cr = 1
+
 " Pathogen  https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
 
@@ -96,7 +102,7 @@ let g:syntastic_always_populate_loc_list = 1
 if &term =~ "xterm" || &term =~ "screen"
   let g:CommandTCancelMap = ['<ESC>', '<C-c>']
 endif
-let g:CommandTWildIgnore=&wildignore . ",target/*"
+let g:CommandTWildIgnore=&wildignore . ",**/target/*"
 
 " ******************
 "   Formatting
@@ -214,6 +220,13 @@ noremap <C-l> <C-w>l
 " ********************
 "  Language Specific
 " ********************
+
+" Java
+nnoremap <silent> <buffer> <leader>c :JavaCorrect<cr>
+nnoremap <silent> <buffer> <leader>o :JavaImportOrganize<cr>
+nnoremap <silent> <buffer> <leader>d :JavaDocSearch -x declarations<cr>
+nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
+let g:EclimCompletionMethod = 'omnifunc' " register eclipse vim autocompletion source
 
 " Processing (visual java library) syntax highlighting and sketch runing
 au BufRead,BufNewFile *.pde     setf processing
