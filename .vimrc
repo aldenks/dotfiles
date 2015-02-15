@@ -62,7 +62,7 @@ set t_vb=       " then set it to do nothing
 
 set tm=500
 
-" Persistant Undo
+" Persistent Undo
     "if windows
       "set undodir=C:\Windows\Temp
     "otherwise
@@ -91,6 +91,11 @@ execute pathogen#infect()
 " When on, :lnext and :lprev always work when there are errors
 " If off, use :Errors to populate location list
 let g:syntastic_always_populate_loc_list = 1
+
+" Command-T
+if &term =~ "xterm" || &term =~ "screen"
+  let g:CommandTCancelMap = ['<ESC>', '<C-c>']
+endif
 
 " ******************
 "   Formatting
