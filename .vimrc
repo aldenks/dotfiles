@@ -222,10 +222,11 @@ noremap <C-l> <C-w>l
 " ********************
 
 " Java
-nnoremap <silent> <buffer> <leader>c :JavaCorrect<cr>
-nnoremap <silent> <buffer> <leader>o :JavaImportOrganize<cr>
-nnoremap <silent> <buffer> <leader>d :JavaDocSearch -x declarations<cr>
-nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
+nnoremap <silent> <leader>c :JavaCorrect<cr>
+nnoremap <silent> <leader>o :JavaImportOrganize<cr>
+nnoremap <silent> <leader>d :JavaDocSearch -x declarations<cr>
+nnoremap <silent> <cr> :JavaSearchContext<cr>
+
 let g:EclimCompletionMethod = 'omnifunc' " register eclipse vim autocompletion source
 
 " Processing (visual java library) syntax highlighting and sketch runing
