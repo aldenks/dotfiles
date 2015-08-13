@@ -181,6 +181,9 @@ endfunction
 "   Mappings
 " ******************
 
+" Copy
+vnoremap <C-c> "*y"
+
 " Set leader to comma
 let mapleader = ","
 
