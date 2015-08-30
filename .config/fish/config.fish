@@ -1,3 +1,6 @@
+# Shell
+set SHELL (which fish)
+
 # Path
 set PATH ~/.cabal/bin $PATH
 set PATH /usr/local/sbin $PATH
