@@ -221,11 +221,7 @@ noremap <C-l> <C-w>l
 
 " Moves an item from a todo list on the left of a split
 " to the top of a 'done' list in the split to the right
-map > dd<C-w>lggP<C-w>h
-" Moves an item from a 'done' list back over to the top
-" of a todo list in a split to the left and leaves the cursor
-" over in the todo side (t
-map < dd<C-w>hggP
+map <leader>> dd<C-w>lggP<C-w>h
 
 " ********************
 "  Language Specific
