@@ -102,6 +102,8 @@ let g:syntastic_always_populate_loc_list = 1
 if &term =~ "xterm" || &term =~ "screen"
   let g:CommandTCancelMap = ['<ESC>', '<C-c>']
 endif
+
+set wildignore+=**/node_modules
 let g:CommandTWildIgnore=&wildignore . ",**/target/*"
 
 " ******************
