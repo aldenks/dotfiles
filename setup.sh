@@ -40,7 +40,7 @@ defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 defaults write com.apple.dock expose-animation-duration -float 0.17
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.2s
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
-defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
