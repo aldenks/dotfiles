@@ -103,8 +103,8 @@ if &term =~ "xterm" || &term =~ "screen"
   let g:CommandTCancelMap = ['<ESC>', '<C-c>']
 endif
 
-set wildignore+=**/node_modules
-let g:CommandTWildIgnore=&wildignore . ",**/target/*"
+set wildignore+=**/node_modules,*.TIF,*.tif,*.hdf,*.pyc
+let g:CommandTWildIgnore=&wildignore . ",**/target/*,data/*"
 
 " ******************
 "   Formatting
@@ -113,9 +113,9 @@ let g:CommandTWildIgnore=&wildignore . ",**/target/*"
 " AutoIndent
 set autoindent
 
-" Change spaces to a tab character
 set smartindent
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
 set expandtab
 
